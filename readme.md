@@ -2,9 +2,6 @@
 
 The project shows how simple is to use the [ui5 webcomponents](https://github.com/SAP/ui5-webcomponents) in React app.
 
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (**version 8.5 or higher** ⚠️)
 
 ## Develop
 
