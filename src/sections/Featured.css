@@ -1,0 +1,10 @@
+
+.app-section--card {
+	flex-wrap: wrap;
+}
+.app-card {
+	width: 30%;
+	background: #fff;
+	margin-bottom: 0.5rem;
+	min-width: 20rem;
+}

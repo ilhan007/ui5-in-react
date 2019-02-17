@@ -1,0 +1,43 @@
+{
+  "name": "ui5-webcomponents-in-react",
+  "version": "0.7.0",
+  "description": "Simple starter template with ui5-webcomponents, react and mockAPI",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --config webpack.config.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ui5-webcomponents", "react", "mockAPI", "CRUD"
+  ],
+  "author": "ilhan007",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "babel-polyfill": "^6.26.0",
+    "clean-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.0",
+    "terser-webpack-plugin": "^1.2.2",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-middleware": "^3.5.2",
+    "webpack-dev-server": "^3.1.8",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "@ui5/webcomponents": "^0.7.0",
+    "axios": "^0.18.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-hot-loader": "^4.3.11"
+  }
+}
