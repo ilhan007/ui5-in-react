@@ -6,12 +6,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = merge(common, {
 	mode: 'production',
 	plugins: [
-		new TerserWebpackPlugin(),
-		new CopyWebpackPlugin([
-			{
-				from: __dirname + '/assets/img',
-				to: __dirname + '/dist/img'
-			}
-		])
+		new TerserWebpackPlugin()
 	]
 });
