@@ -34,13 +34,13 @@ class ListItem extends Component {
 							ref={this.btnEdit}
 							type="Emphasized"
 							icon-end icon="sap-icon://edit"
-							class="h-space">Edit
+							class="action-btn">Edit
 						</ui5-button>
 						<ui5-button
 							ref={this.btnDelete}
 							type="Negative"
 							icon-end icon="sap-icon://delete"
-							class="h-space">Delete
+							class="action-btn">Delete
 						</ui5-button>
 					</div>
 				</div>
