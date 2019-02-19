@@ -7,13 +7,13 @@ const RoutingExample = () => (
 	<div>
 		<ul>
 			<li>
-				<NavLink exact to="/" activeClassName="selected">Home</NavLink>
+				<NavLink exact to="/ui5-in-react/" activeClassName="selected">Home</NavLink>
 			</li>
 			<li>
-				<NavLink exact to="/about"  activeClassName="selected">About</NavLink>
+				<NavLink exact to="/ui5-in-react/about"  activeClassName="selected">About</NavLink>
 			</li>
 			<li>
-				<NavLink exact to="/topics" activeClassName="selected">Topics</NavLink>
+				<NavLink exact to="/ui5-in-react/topics" activeClassName="selected">Topics</NavLink>
 			</li>
 		</ul>
 	<hr />

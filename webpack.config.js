@@ -9,7 +9,10 @@ module.exports = merge(common, {
 	devServer: {
 		contentBase: './dist',
 		hot: true,
-		publicPath: '/',
-		historyApiFallback: true,
+		publicPath: '/ui5-in-react',
+		historyApiFallback: {
+			index: '/ui5-in-react/'
+		},
+		openPage: 'ui5-in-react', // And here
 	},
 });
