@@ -18,6 +18,7 @@ import Header from "../header/Header";
 import Navigation from "../navigation/Navigation";
 import Featured from "../sections/Featured";
 import ListContainer from "../list/ListContainer";
+import RoutingExample from "../routingExample/RoutingExample";
 import "./App.css";
 
 class App extends Component {
@@ -37,7 +38,10 @@ class App extends Component {
 
 					{/* Cards section */}
 					<ui5-title level="H3" class="app-section-title">Featured</ui5-title>
-					<Featured /> 
+					<Featured />
+
+					<ui5-title level="H3" class="app-section-title">Routing Example</ui5-title>
+					<RoutingExample />
 				</div>
 			</div>
 		);
