@@ -1,18 +1,19 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
+import "./Routing.css";
 
 const RoutingExample = () => (
 <Router>
 	<div>
 		<ul>
 			<li>
-				<Link to="/">Home</Link>
+				<NavLink exact to="/" activeClassName="selected">Home</NavLink>
 			</li>
 			<li>
-				<Link to="/about">About</Link>
+				<NavLink exact to="/about"  activeClassName="selected">About</NavLink>
 			</li>
 			<li>
-				<Link to="/topics">Topics</Link>
+				<NavLink exact to="/topics" activeClassName="selected">Topics</NavLink>
 			</li>
 		</ul>
 	<hr />
