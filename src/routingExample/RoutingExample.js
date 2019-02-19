@@ -18,9 +18,9 @@ const RoutingExample = () => (
 		</ul>
 	<hr />
 
-	<Route exact path="/" component={Home} />
-	<Route path="/about" component={About} />
-	<Route path="/topics" component={Topics} />
+	<Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+	<Route path={process.env.PUBLIC_URL + '/'} component={About} />
+	<Route path={process.env.PUBLIC_URL + '/'} component={Topics} />
 </div>
 </Router>
 );

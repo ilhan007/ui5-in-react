@@ -40,7 +40,7 @@ module.exports = {
 	},
 	resolve: { extensions: ["*", ".js", ".jsx", ".png", ".svg"] },
 	output: {
-		publicPath: '/ui5-in-react',// deploy on server with /app/ folder name
+		publicPath: '/ui5-in-react/',
 		filename: '[name].bundle.js',
 		path: path.resolve(__dirname, 'dist')
 	},
