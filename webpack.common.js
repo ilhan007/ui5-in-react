@@ -23,6 +23,13 @@ module.exports = {
 				type: 'javascript/auto'
 			},
 			{
+				test: /\.properties$/,
+				loader: 'file-loader',
+				options: {
+					name: 'static/media/[name].[hash:8].[ext]',
+				},
+			},
+			{
 				test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
 				use: [{
 					loader: 'file-loader',

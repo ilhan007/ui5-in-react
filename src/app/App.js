@@ -13,6 +13,9 @@ import "@ui5/webcomponents/dist/Popover";
 import "@ui5/webcomponents/dist/Dialog";
 import "@ui5/webcomponents/dist/Tab";
 import "@ui5/webcomponents/dist/TabContainer";
+import "@ui5/webcomponents/dist/Table";
+import "@ui5/webcomponents/dist/Panel";
+
 
 import Header from "../header/Header";
 import Navigation from "../navigation/Navigation";

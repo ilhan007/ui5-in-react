@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
+import { HashRouter as Router, Route, Link, NavLink } from "react-router-dom";
 import "./Routing.css";
 
 const RoutingExample = () => (
@@ -7,13 +7,13 @@ const RoutingExample = () => (
 	<div>
 		<ul>
 			<li>
-				<NavLink exact to="/ui5-in-react/" activeClassName="selected">Home</NavLink>
+				<NavLink exact to="/" activeClassName="selected">Home</NavLink>
 			</li>
 			<li>
-				<NavLink exact to="/ui5-in-react/about"  activeClassName="selected">About</NavLink>
+				<NavLink exact to="/about"  activeClassName="selected">About</NavLink>
 			</li>
 			<li>
-				<NavLink exact to="/ui5-in-react/topics" activeClassName="selected">Topics</NavLink>
+				<NavLink exact to="/topics" activeClassName="selected">Topics</NavLink>
 			</li>
 		</ul>
 	<hr />
