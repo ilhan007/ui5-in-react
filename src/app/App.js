@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {hot} from "react-hot-loader";
+import { Route } from "react-router-dom";
 
 import "@ui5/webcomponents/dist/Button";
 import "@ui5/webcomponents/dist/Input";
@@ -16,36 +17,22 @@ import "@ui5/webcomponents/dist/TabContainer";
 import "@ui5/webcomponents/dist/Table";
 import "@ui5/webcomponents/dist/Panel";
 
-
 import Header from "../header/Header";
 import Navigation from "../navigation/Navigation";
-import Featured from "../sections/Featured";
-import ListContainer from "../list/ListContainer";
-import RoutingExample from "../routingExample/RoutingExample";
+import Main from "../main/Main.js";
 import "./App.css";
 
 class App extends Component {
-	render(){
+	constructor (props) {
+		super(props);
+	}
+
+	render() {
 		return(
 			<div className="app-root">
-				{/* Shell Header */}
-				<Header /> 
-
-				<div className="app-content">
-					{/* Tabs */}
-					<Navigation />
-
-					{/* CRUD List */}
-					<ui5-title level="H3" class="app-section-title">CRUD List</ui5-title>
-					<ListContainer /> 
-
-					{/* Cards section */}
-					<ui5-title level="H3" class="app-section-title">Featured</ui5-title>
-					<Featured />
-
-					<ui5-title level="H3" class="app-section-title">Routing Example</ui5-title>
-					<RoutingExample />
-				</div>
+				<Header />
+				<Route path='/' component={Navigation}/>
+				<Main />
 			</div>
 		);
 	}

@@ -1,10 +1,14 @@
 import React, { Component } from "react";
-import "./Featured.css";
 
-class Featured extends Component {
+class Home extends Component {
+	constructor (props) {
+		super(props);
+		this.section = React.createRef();
+	}
+
 	render(){
 		return(
-			<section className="app-section app-section--card">
+			<section ref={this.section} className="app-section app-section--card">
 				<ui5-card
 					heading="Recent Activities"
 					status="3 of 15"
@@ -42,4 +46,4 @@ class Featured extends Component {
 	}
 }
 
-export default Featured;
+export default Home;

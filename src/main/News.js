@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import http from 'axios';
-import List from './List';
-import "../list/List.css";
+import List from './list/List';
+
 
 const API_URL = '//5c6929b5bad2070014abb4ce.mockapi.io/todo';
 const RESPONSE_OK = 200;
 
-class ListContainer extends Component {
+class News extends Component {
 	constructor (props) {
 		super(props);
 
@@ -119,4 +119,4 @@ class ListContainer extends Component {
 	}
 }
 
-export default ListContainer;
+export default News;

@@ -1,48 +1,31 @@
 import React, { Component } from "react";
 
 class Navigation extends Component {
-	render(){
+	constructor (props) {
+		super(props);
+		this.nav = React.createRef();
+	}
+
+	componentDidMount () {
+		this.nav.current.addEventListener("itemSelect", this.onTabSelected.bind(this));
+		this.nav.current.selectedKey = this.props.location.pathname;
+	}
+
+	onTabSelected(event){
+		const route = event.detail.item.getAttribute("data-key");
+		this.props.history.push(`${route}`);
+	}
+
+	render() {
 		return(
-<ui5-panel>
-        <ui5-table id="todo-table">
-            <ui5-table-column data-ui5-slot="columns">
-                <span data-ui5-slot="header">Task</span>
-            </ui5-table-column>
-            <ui5-table-column data-ui5-slot="columns" width="10rem">
-                <span data-ui5-slot="header">Actions</span>
-            </ui5-table-column>
-
-            <ui5-table-row data-ui5-slot="rows" id="todo-item-row-1">
-                <ui5-table-cell data-ui5-slot="cells">
-                    <span className="item-text">Finish this example</span>
-                </ui5-table-cell>
-
-                <ui5-table-cell data-ui5-slot="cells">
-                    <span>
-                        <ui5-button data-item-id="1" icon="sap-icon://delete" class="remove-button"
-                                    type="Transparent"></ui5-button>
-                        <ui5-button data-item-id="1" icon="sap-icon://accept" class="done-button"
-                                    type="Transparent"></ui5-button>
-                    </span>
-                </ui5-table-cell>
-            </ui5-table-row>
-
-            <ui5-table-row data-ui5-slot="rows" id="todo-item-row-2">
-                <ui5-table-cell data-ui5-slot="cells">
-                    <span className="item-text">Finish this example</span>
-                </ui5-table-cell>
-
-                <ui5-table-cell data-ui5-slot="cells">
-                    <span>
-                        <ui5-button data-item-id="2" icon="sap-icon://delete" class="remove-button"
-                                    type="Transparent"></ui5-button>
-                        <ui5-button data-item-id="2" icon="sap-icon://accept" class="done-button"
-                                    type="Transparent"></ui5-button>
-                    </span>
-                </ui5-table-cell>
-            </ui5-table-row>
-        </ui5-table>
-</ui5-panel>
+			<div>
+				<ui5-tabcontainer ref={this.nav} show-overflow background-design="Transparent">
+					<ui5-tab data-key="/home" text="Home">
+					</ui5-tab>
+					<ui5-tab data-key="/news" text="News">
+					</ui5-tab>
+				</ui5-tabcontainer>
+			</div>
 		);
 	}
 }
