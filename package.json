@@ -37,7 +37,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "@ui5/webcomponents": "^0.7.0",
+    "@ui5/webcomponents": "^0.8.0",
     "axios": "^0.18.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",

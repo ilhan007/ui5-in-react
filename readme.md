@@ -5,16 +5,13 @@ See the [Demo](https://ilhan007.github.io/ui5-in-react/).
 
 ### Develop
 
-#### Requirements
-- [Yarn](https://yarnpkg.com/en)
-
 #### Getting Started
 
 ```
-yarn # to install all dependencies
+yarn or npm install # to install all dependencies
 ```
 ```
-yarn start # to serve the project
+yarn start or npm start # to serve the project
 ```
 
 ### Built With

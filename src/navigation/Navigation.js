@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+const paths = {"/home" : 0, "/news": 1};
+
 class Navigation extends Component {
 	constructor (props) {
 		super(props);
@@ -8,7 +10,7 @@ class Navigation extends Component {
 
 	componentDidMount () {
 		this.nav.current.addEventListener("itemSelect", this.onTabSelected.bind(this));
-		this.nav.current.selectedKey = this.props.location.pathname;
+		this.nav.current.selectedIndex = paths[this.props.location.pathname];
 	}
 
 	onTabSelected(event){
